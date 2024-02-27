@@ -1,0 +1,316 @@
+---
+title: "Class 9: Halloween Candy Mini Project"
+author: "Alexis Galano (PID: A17628362)"
+format: pdf
+editor: visual
+---
+
+```{r}
+candy_file <- read.csv("candy-data.txt")
+candy = read.csv("candy-data.txt", row.names=1)
+head(candy)
+```
+
+> Q1. How many different candy types are in this dataset?
+
+```{r}
+nrow(candy)
+```
+
+-   A1. There are 85 different candy types.
+
+> Q2. How many fruity candy types are in the dataset?
+
+```{r}
+sum(candy$fruity)
+```
+
+-   A2. There are 38 fruity candy types.
+
+```{r}
+sum(candy$chocolate)
+```
+```{r}
+View(candy)
+```
+
+> Q3. What is your favorite candy in the dataset and what is it’s winpercent value?
+
+```{r}
+candy["Twix", ]$winpercent
+```
+
+-   A3. My favorite candy is Twix with a winpercent of 81.64%.
+
+> Q4. What is the winpercent value for “Kit Kat”?
+
+```{r}
+candy["Kit Kat", ]$winpercent
+```
+-   A4. The winpercent for Kit Kat is 76.77%
+
+
+> Q5. What is the winpercent value for “Tootsie Roll Snack Bars”?
+
+```{r}
+candy["Tootsie Roll Snack Bars", ]$winpercent
+```
+-   A5. The winpercent for Tootsie Roll Snack Bars is 49.65%
+
+Q. What is the least liked candy in the dataset? - lowest winpercent
+
+```{r}
+min(candy$winpercent)
+
+```
+```{r}
+inds <- order(candy$winpercent)
+head(candy[inds,])
+```
+
+-   A. The least liked candy is Nik L Nip with a 22.44% winpercent.
+
+```{r}
+#install.packages("skimr")
+```
+
+```{r}
+library("skimr")
+skim(candy)
+```
+
+> Q6. Is there any variable/column that looks to be on a different scale to the majority of the other columns in the dataset?
+
+- A6. There is a histogram column and an n_missing column that look to be different than the other columns.
+
+> Q7. What do you think a zero and one represent for the candy\$chocolate column?
+
+- A7. 0 in the n_missing column for candy\$chocolate means there are no missing numeric values for the chocolate data. The 1 in the complete_rate column means that all the values in the candy data frame are relevant and included in the statistics.
+
+> Q8. Plot a histogram of winpercent values
+
+```{r}
+library(ggplot2)
+
+ggplot(candy) +
+  aes(winpercent, col="red") + 
+  geom_histogram()
+```
+
+```{r}
+hist(candy$winpercent, breaks=8)
+```
+
+> Q9. Is the distribution of winpercent values symmetrical?
+
+-   A9. No the distribution of winpercent values in not symmetrical.
+
+> Q10. Is the center of the distribution above or below 50%?
+
+- A10. The center of distribution is below 50%.
+
+> Q11. On average is chocolate candy higher or lower ranked than fruit candy?
+First find all chocolate candy and their \$winpercent values. Next summarize these values into one number. Then do the same for fruit candy and compare the numbers.
+
+```{r}
+choc.inds <- as.logical(candy$chocolate)
+choc.win <- candy[choc.inds,]$winpercent
+mean(choc.win)
+```
+
+```{r}
+fruit.inds <- as.logical(candy$fruity)
+fruit.win <- candy[fruit.inds,]$winpercent
+mean(fruit.win)
+```
+
+-  A11. Chocolate candy is higher ranked on average compared to fruit candy with a difference of about 16%.
+
+
+> Q12. Is this difference statistically significant?
+
+```{r}
+t.test(choc.win, fruit.win)
+```
+
+- A12. The difference in the means is not equal to 0 and so they are statistically significant. The p-value is 2.871e-08
+
+> Q13. What are the five least liked candy types in this set?
+
+```{r}
+head(candy[order(candy$winpercent),], n=5)
+```
+- A13. The bottom 5 are Nik L Nip, Boston Baked Beans, Chiclets, Super Bubble, Jawbusters, Rootbeer barrels.
+
+> Q14. What are the top 5 all time favorite candy types out of this set?
+
+```{r}
+inds <- order(candy$winpercent)
+tail(candy[inds,], n=5)
+```
+
+- The top 5 are Snickers, Kit Kat, Twix, Reese's Miniatures, Reese's Peanut Butter Cup. 
+
+
+
+> Q15. Make a first barplot of candy ranking based on winpercent values.
+
+
+```{r}
+ggplot(candy) + 
+  aes(candy$winpercent, rownames(candy)) + 
+  geom_col()
+```
+
+
+> Q16. This is quite ugly, use the reorder() function to get the bars sorted by winpercent?
+
+Add some color to our ggplot. We need to make a custom color vector.
+
+```{r}
+my_cols=rep("lightblue", nrow(candy))
+my_cols[as.logical(candy$chocolate)] <- "hotpink"
+my_cols[as.logical(candy$bar)] = "lightpink"
+my_cols[as.logical(candy$fruity)] = "lightgreen"
+```
+
+```{r}
+ggplot(candy) + 
+  aes(winpercent, reorder(rownames(candy), winpercent)) +
+  geom_col(fill=my_cols) +
+  labs(  x='Winpercent', 
+         y='Candy Type',
+         title='Favorite Candy Types Ranked')
+ggsave('barplot.png',width=9,height=12)
+```
+
+![](barplot.png)
+> Q17. What is the worst ranked chocolate candy?
+
+- A17. Sixlets 
+
+> Q18. What is the best ranked fruity candy?
+
+- A18. Starburst 
+
+```{r}
+candy$pricepercent
+```
+
+If we want to see what is good candy to buy in ters of winpercent and pricepercent we can plot these two variables and then see the best candy for the least amount of money.
+
+```{r}
+ggplot(candy) + 
+  aes(winpercent, pricepercent, label=rownames(candy)) + 
+  geom_point(col=my_cols) + 
+  geom_text()
+```
+
+To avoid the overplotting of these labels we can use an add on package called ggrepl
+
+```{r}
+#install.packages("ggrepel")
+```
+
+```{r}
+library(ggrepel)
+library(ggplot2)
+```
+
+Play with the 'max.overlaps' parameter to 'geom_text_repl()'
+
+```{r}
+ggplot(candy) + 
+  aes(winpercent, pricepercent, label=rownames(candy)) + 
+  geom_point(col=my_cols) + 
+  geom_text_repel(max.overlaps=5, size=3.3, col=my_cols)
+```
+
+> Q19. Which candy type is the highest ranked in terms of winpercent for the least money - i.e. offers the most bang for your buck?
+
+- A19. I would say Reese's Miniatures is the highest ranked for the lowest price.
+
+> Q20. What are the top 5 most expensive candy types in the dataset and of these which is the least popular?
+
+- A20. Nik L Nip, Ring pop, Nestle Smarties, Mr. Goodbar, and Hersheys are the most expensive. Of those Nik L Nip is the least popular.
+
+
+## Exploring the correlation structure
+
+```{r}
+#install.packages("corrplot")
+library(corrplot)
+```
+
+```{r}
+cij <- cor(candy)
+corrplot(cij)
+```
+
+> Q22. Examining this plot what two variables are anti-correlated (i.e. have minus values)?
+
+-   A22. Chocolate and Fruity are two variables that are anti-correlated because they are highly UNLIKELY to be combined together in a candy. Also it's unlikely that a fruity candy is in a bar form.
+
+> Q23. Similarly, what two variables are most positively correlated?
+
+-   A23. Chocolate and bar are two variables that are positively correlated meaning chocolate can typically be found in bar form.
+
+
+
+
+
+## Principal Component Analysis
+
+This function for this is called 'prcom()' and here we knoew we need to scale our data with the 'scale=TRUE' argument
+
+```{r}
+pca <- prcomp(candy, scale=TRUE)
+summary(pca)
+```
+
+```{r}
+par(mar=c(8,4,2,2))
+barplot(pca$rotation[,1], las=2, ylab="PC1 Contribution")
+```
+
+Q24. What original variables are picked up strongly by PC1 in the positive direction? Do these make sense to you?
+
+-   A24. PC1 represents the correlation structure in the candy data. In the positive direction we have the variables fruity, hard, and pluribus because they are variables that can be categorized together due to their correlation. Example: Skittles is fruity, has a slightly hard outer shell, and there are multiple pieces in a single pack.
+
+```{r}
+pca <- prcomp(candy, SCALE=FALSE)
+summary(pca)
+```
+
+```{r}
+my_data <- cbind(candy, pca$x[,1:3])
+```
+
+```{r}
+p <- ggplot(my_data) + 
+        aes(x=PC1, y=PC2, 
+            size=winpercent/100,  
+            text=rownames(my_data),
+            label=rownames(my_data)) +
+        geom_point(col=my_cols)
+```
+
+```{r}
+library(ggrepel)
+
+p + geom_text_repel(size=3.3, col=my_cols, max.overlaps = 7)  + 
+  theme(legend.position = "none") +
+  labs(title="Halloween Candy PCA Space",
+       subtitle="Colored by type: chocolate bar (dark brown), chocolate other (light brown), fruity (red), other (black)",
+       caption="Data from 538")
+```
+
+## LOADINGS PLOT
+
+```{r}
+loadings <- as.data.frame(pca$rotation)
+
+ggplot(loadings) + 
+  aes(PC1, reorder(rownames(loadings), PC1)) + 
+  geom_col()
+```
