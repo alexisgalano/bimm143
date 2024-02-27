@@ -1,0 +1,258 @@
+data_ADK_M7.PDB
+#
+_entity.details                     . 
+_entity.formula_weight              . 
+_entity.id                          1 
+_entity.src_method                  . 
+_entity.type                        polymer 
+_entity.pdbx_description            'Polymer 1' 
+_entity.pdbx_number_of_molecules    . 
+_entity.pdbx_mutation               . 
+_entity.pdbx_fragment               . 
+_entity.pdbx_ec                     . 
+#
+_chem_comp.formula           . 
+_chem_comp.formula_weight    . 
+_chem_comp.id                ALA 
+_chem_comp.mon_nstd_flag     y 
+_chem_comp.name              ALANINE 
+_chem_comp.type              'l-peptide linking' 
+_chem_comp.pdbx_synonyms     . 
+#
+loop_
+_atom_site.group_PDB
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_comp_id
+_atom_site.label_seq_id
+_atom_site.label_alt_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.label_asym_id
+_atom_site.label_entity_id
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_formal_charge
+_atom_site.auth_atom_id
+_atom_site.auth_comp_id
+_atom_site.auth_seq_id
+_atom_site.auth_asym_id
+_atom_site.pdbx_PDB_model_num
+ATOM 1 C CA ALA 1 . . ' ' 1 -19.326 9.682 18.832 1 0 . CA ALA 1 ' ' 1 
+ATOM 2 C CA ALA 2 . . ' ' 1 -16.894 6.998 17.674 1 0 . CA ALA 2 ' ' 1 
+ATOM 3 C CA ALA 3 . . ' ' 1 -18.316 5.203 14.643 1 0 . CA ALA 3 ' ' 1 
+ATOM 4 C CA ALA 4 . . ' ' 1 -17.091 2.435 12.363 1 0 . CA ALA 4 ' ' 1 
+ATOM 5 C CA ALA 5 . . ' ' 1 -18.775 2.508 8.937 1 0 . CA ALA 5 ' ' 1 
+ATOM 6 C CA ALA 6 . . ' ' 1 -18.464 -0.698 6.902 1 0 . CA ALA 6 ' ' 1 
+ATOM 7 C CA ALA 7 . . ' ' 1 -19.758 -1.475 3.453 1 0 . CA ALA 7 ' ' 1 
+ATOM 8 C CA ALA 8 . . ' ' 1 -19.074 -3.493 0.35 1 0 . CA ALA 8 ' ' 1 
+ATOM 9 C CA ALA 9 . . ' ' 1 -17.159 -1.879 -2.535 1 0 . CA ALA 9 ' ' 1 
+ATOM 10 C CA ALA 10 . . ' ' 1 -19.711 -0.041 -4.657 1 0 . CA ALA 10 ' ' 1 
+ATOM 11 C CA ALA 11 . . ' ' 1 -22.527 0.023 -2.105 1 0 . CA ALA 11 ' ' 1 
+ATOM 12 C CA ALA 12 . . ' ' 1 -22.175 3.785 -1.549 1 0 . CA ALA 12 ' ' 1 
+ATOM 13 C CA ALA 13 . . ' ' 1 -21.622 4.081 2.214 1 0 . CA ALA 13 ' ' 1 
+ATOM 14 C CA ALA 14 . . ' ' 1 -19.834 7.34 1.481 1 0 . CA ALA 14 ' ' 1 
+ATOM 15 C CA ALA 15 . . ' ' 1 -23.202 8.925 0.75 1 0 . CA ALA 15 ' ' 1 
+ATOM 16 C CA ALA 16 . . ' ' 1 -23.798 9.234 4.493 1 0 . CA ALA 16 ' ' 1 
+ATOM 17 C CA ALA 17 . . ' ' 1 -20.333 10.388 5.574 1 0 . CA ALA 17 ' ' 1 
+ATOM 18 C CA ALA 18 . . ' ' 1 -20.903 14.135 5.493 1 0 . CA ALA 18 ' ' 1 
+ATOM 19 C CA ALA 19 . . ' ' 1 -24.176 13.751 7.361 1 0 . CA ALA 19 ' ' 1 
+ATOM 20 C CA ALA 20 . . ' ' 1 -22.356 11.935 10.18 1 0 . CA ALA 20 ' ' 1 
+ATOM 21 C CA ALA 21 . . ' ' 1 -19.44 14.367 10.22 1 0 . CA ALA 21 ' ' 1 
+ATOM 22 C CA ALA 22 . . ' ' 1 -21.781 17.352 10.564 1 0 . CA ALA 22 ' ' 1 
+ATOM 23 C CA ALA 23 . . ' ' 1 -24.092 15.688 13.1 1 0 . CA ALA 23 ' ' 1 
+ATOM 24 C CA ALA 24 . . ' ' 1 -21.251 15.088 15.543 1 0 . CA ALA 24 ' ' 1 
+ATOM 25 C CA ALA 25 . . ' ' 1 -18.392 17.378 14.581 1 0 . CA ALA 25 ' ' 1 
+ATOM 26 C CA ALA 26 . . ' ' 1 -16.026 14.547 13.79 1 0 . CA ALA 26 ' ' 1 
+ATOM 27 C CA ALA 27 . . ' ' 1 -13.562 13.824 10.979 1 0 . CA ALA 27 ' ' 1 
+ATOM 28 C CA ALA 28 . . ' ' 1 -13.725 10.963 8.554 1 0 . CA ALA 28 ' ' 1 
+ATOM 29 C CA ALA 29 . . ' ' 1 -10.614 8.791 8.89 1 0 . CA ALA 29 ' ' 1 
+ATOM 30 C CA ALA 30 . . ' ' 1 -9.342 5.824 6.919 1 0 . CA ALA 30 ' ' 1 
+ATOM 31 C CA ALA 31 . . ' ' 1 -6.304 3.584 6.841 1 0 . CA ALA 31 ' ' 1 
+ATOM 32 C CA ALA 32 . . ' ' 1 -5.637 4.739 3.299 1 0 . CA ALA 32 ' ' 1 
+ATOM 33 C CA ALA 33 . . ' ' 1 -5.59 8.404 4.291 1 0 . CA ALA 33 ' ' 1 
+ATOM 34 C CA ALA 34 . . ' ' 1 -3.499 7.622 7.377 1 0 . CA ALA 34 ' ' 1 
+ATOM 35 C CA ALA 35 . . ' ' 1 -0.759 5.943 5.383 1 0 . CA ALA 35 ' ' 1 
+ATOM 36 C CA ALA 36 . . ' ' 1 -0.555 8.878 2.995 1 0 . CA ALA 36 ' ' 1 
+ATOM 37 C CA ALA 37 . . ' ' 1 -0.54 11.437 5.828 1 0 . CA ALA 37 ' ' 1 
+ATOM 38 C CA ALA 38 . . ' ' 1 1.934 9.875 8.277 1 0 . CA ALA 38 ' ' 1 
+ATOM 39 C CA ALA 39 . . ' ' 1 4.479 9.624 5.446 1 0 . CA ALA 39 ' ' 1 
+ATOM 40 C CA ALA 40 . . ' ' 1 4.234 13.393 4.923 1 0 . CA ALA 40 ' ' 1 
+ATOM 41 C CA ALA 41 . . ' ' 1 4.627 14.075 8.645 1 0 . CA ALA 41 ' ' 1 
+ATOM 42 C CA ALA 42 . . ' ' 1 8.072 12.579 9.109 1 0 . CA ALA 42 ' ' 1 
+ATOM 43 C CA ALA 43 . . ' ' 1 6.906 10.888 12.298 1 0 . CA ALA 43 ' ' 1 
+ATOM 44 C CA ALA 44 . . ' ' 1 8.522 7.55 13.125 1 0 . CA ALA 44 ' ' 1 
+ATOM 45 C CA ALA 45 . . ' ' 1 5.421 5.516 12.312 1 0 . CA ALA 45 ' ' 1 
+ATOM 46 C CA ALA 46 . . ' ' 1 5.201 7.343 9.006 1 0 . CA ALA 46 ' ' 1 
+ATOM 47 C CA ALA 47 . . ' ' 1 8.778 6.445 8.21 1 0 . CA ALA 47 ' ' 1 
+ATOM 48 C CA ALA 48 . . ' ' 1 8.159 2.82 9.094 1 0 . CA ALA 48 ' ' 1 
+ATOM 49 C CA ALA 49 . . ' ' 1 5.052 2.858 6.897 1 0 . CA ALA 49 ' ' 1 
+ATOM 50 C CA ALA 50 . . ' ' 1 6.901 4.587 4.042 1 0 . CA ALA 50 ' ' 1 
+ATOM 51 C CA ALA 51 . . ' ' 1 9.631 1.926 4.108 1 0 . CA ALA 51 ' ' 1 
+ATOM 52 C CA ALA 52 . . ' ' 1 7.053 -0.878 3.953 1 0 . CA ALA 52 ' ' 1 
+ATOM 53 C CA ALA 53 . . ' ' 1 5.161 0.734 1.063 1 0 . CA ALA 53 ' ' 1 
+ATOM 54 C CA ALA 54 . . ' ' 1 8.309 1.566 -0.894 1 0 . CA ALA 54 ' ' 1 
+ATOM 55 C CA ALA 55 . . ' ' 1 9.26 -2.12 -0.718 1 0 . CA ALA 55 ' ' 1 
+ATOM 56 C CA ALA 56 . . ' ' 1 5.863 -3.041 -2.2 1 0 . CA ALA 56 ' ' 1 
+ATOM 57 C CA ALA 57 . . ' ' 1 5.139 -4.927 1.009 1 0 . CA ALA 57 ' ' 1 
+ATOM 58 C CA ALA 58 . . ' ' 1 1.982 -5.359 3.009 1 0 . CA ALA 58 ' ' 1 
+ATOM 59 C CA ALA 59 . . ' ' 1 1.294 -3.067 5.933 1 0 . CA ALA 59 ' ' 1 
+ATOM 60 C CA ALA 60 . . ' ' 1 1.031 -5.326 8.972 1 0 . CA ALA 60 ' ' 1 
+ATOM 61 C CA ALA 61 . . ' ' 1 -1.971 -5.174 11.255 1 0 . CA ALA 61 ' ' 1 
+ATOM 62 C CA ALA 62 . . ' ' 1 0.437 -4.071 13.985 1 0 . CA ALA 62 ' ' 1 
+ATOM 63 C CA ALA 63 . . ' ' 1 1.478 -0.992 12.004 1 0 . CA ALA 63 ' ' 1 
+ATOM 64 C CA ALA 64 . . ' ' 1 -2.033 -0.145 10.866 1 0 . CA ALA 64 ' ' 1 
+ATOM 65 C CA ALA 65 . . ' ' 1 -3.327 -0.254 14.424 1 0 . CA ALA 65 ' ' 1 
+ATOM 66 C CA ALA 66 . . ' ' 1 -0.498 1.943 15.675 1 0 . CA ALA 66 ' ' 1 
+ATOM 67 C CA ALA 67 . . ' ' 1 -1.406 4.434 12.942 1 0 . CA ALA 67 ' ' 1 
+ATOM 68 C CA ALA 68 . . ' ' 1 -5.095 4.349 13.961 1 0 . CA ALA 68 ' ' 1 
+ATOM 69 C CA ALA 69 . . ' ' 1 -4.116 4.883 17.596 1 0 . CA ALA 69 ' ' 1 
+ATOM 70 C CA ALA 70 . . ' ' 1 -1.941 7.827 16.59 1 0 . CA ALA 70 ' ' 1 
+ATOM 71 C CA ALA 71 . . ' ' 1 -4.627 9.312 14.307 1 0 . CA ALA 71 ' ' 1 
+ATOM 72 C CA ALA 72 . . ' ' 1 -7.373 9.308 16.967 1 0 . CA ALA 72 ' ' 1 
+ATOM 73 C CA ALA 73 . . ' ' 1 -5.076 10.963 19.504 1 0 . CA ALA 73 ' ' 1 
+ATOM 74 C CA ALA 74 . . ' ' 1 -4.946 14.049 17.305 1 0 . CA ALA 74 ' ' 1 
+ATOM 75 C CA ALA 75 . . ' ' 1 -6.887 17.085 18.392 1 0 . CA ALA 75 ' ' 1 
+ATOM 76 C CA ALA 76 . . ' ' 1 -9.499 16.81 15.675 1 0 . CA ALA 76 ' ' 1 
+ATOM 77 C CA ALA 77 . . ' ' 1 -10.798 13.507 17.054 1 0 . CA ALA 77 ' ' 1 
+ATOM 78 C CA ALA 78 . . ' ' 1 -11.807 15.082 20.374 1 0 . CA ALA 78 ' ' 1 
+ATOM 79 C CA ALA 79 . . ' ' 1 -15.525 14.672 19.681 1 0 . CA ALA 79 ' ' 1 
+ATOM 80 C CA ALA 80 . . ' ' 1 -15.024 11.239 18.088 1 0 . CA ALA 80 ' ' 1 
+ATOM 81 C CA ALA 81 . . ' ' 1 -14.32 10.004 14.61 1 0 . CA ALA 81 ' ' 1 
+ATOM 82 C CA ALA 82 . . ' ' 1 -15.88 8.249 11.64 1 0 . CA ALA 82 ' ' 1 
+ATOM 83 C CA ALA 83 . . ' ' 1 -13.588 5.323 10.862 1 0 . CA ALA 83 ' ' 1 
+ATOM 84 C CA ALA 84 . . ' ' 1 -14.33 4.435 7.244 1 0 . CA ALA 84 ' ' 1 
+ATOM 85 C CA ALA 85 . . ' ' 1 -13.843 0.901 6.023 1 0 . CA ALA 85 ' ' 1 
+ATOM 86 C CA ALA 86 . . ' ' 1 -11.708 -0.538 8.847 1 0 . CA ALA 86 ' ' 1 
+ATOM 87 C CA ALA 87 . . ' ' 1 -11.334 -3.026 10.455 1 0 . CA ALA 87 ' ' 1 
+ATOM 88 C CA ALA 88 . . ' ' 1 -11.619 -5.457 7.587 1 0 . CA ALA 88 ' ' 1 
+ATOM 89 C CA ALA 89 . . ' ' 1 -10.898 -8.742 9.428 1 0 . CA ALA 89 ' ' 1 
+ATOM 90 C CA ALA 90 . . ' ' 1 -11.395 -10.261 12.89 1 0 . CA ALA 90 ' ' 1 
+ATOM 91 C CA ALA 91 . . ' ' 1 -7.603 -10.165 13.576 1 0 . CA ALA 91 ' ' 1 
+ATOM 92 C CA ALA 92 . . ' ' 1 -7.732 -6.398 12.976 1 0 . CA ALA 92 ' ' 1 
+ATOM 93 C CA ALA 93 . . ' ' 1 -10.756 -5.933 15.238 1 0 . CA ALA 93 ' ' 1 
+ATOM 94 C CA ALA 94 . . ' ' 1 -8.995 -7.947 17.95 1 0 . CA ALA 94 ' ' 1 
+ATOM 95 C CA ALA 95 . . ' ' 1 -5.888 -5.792 17.557 1 0 . CA ALA 95 ' ' 1 
+ATOM 96 C CA ALA 96 . . ' ' 1 -8.102 -2.74 18.097 1 0 . CA ALA 96 ' ' 1 
+ATOM 97 C CA ALA 97 . . ' ' 1 -9.352 -4.311 21.315 1 0 . CA ALA 97 ' ' 1 
+ATOM 98 C CA ALA 98 . . ' ' 1 -5.811 -5.193 22.445 1 0 . CA ALA 98 ' ' 1 
+ATOM 99 C CA ALA 99 . . ' ' 1 -4.851 -1.575 21.834 1 0 . CA ALA 99 ' ' 1 
+ATOM 100 C CA ALA 100 . . ' ' 1 -7.835 -0.146 23.691 1 0 . CA ALA 100 ' ' 1 
+ATOM 101 C CA ALA 101 . . ' ' 1 -9.745 1.256 20.723 1 0 . CA ALA 101 ' ' 1 
+ATOM 102 C CA ALA 102 . . ' ' 1 -13.468 0.802 21.321 1 0 . CA ALA 102 ' ' 1 
+ATOM 103 C CA ALA 103 . . ' ' 1 -16.218 2.525 19.36 1 0 . CA ALA 103 ' ' 1 
+ATOM 104 C CA ALA 104 . . ' ' 1 -19.791 3.469 20.095 1 0 . CA ALA 104 ' ' 1 
+ATOM 105 C CA ALA 105 . . ' ' 1 -21.412 2.263 16.892 1 0 . CA ALA 105 ' ' 1 
+ATOM 106 C CA ALA 106 . . ' ' 1 -20.608 -0.19 14.112 1 0 . CA ALA 106 ' ' 1 
+ATOM 107 C CA ALA 107 . . ' ' 1 -22.808 0.56 11.071 1 0 . CA ALA 107 ' ' 1 
+ATOM 108 C CA ALA 108 . . ' ' 1 -23.086 -2.022 8.261 1 0 . CA ALA 108 ' ' 1 
+ATOM 109 C CA ALA 109 . . ' ' 1 -24.183 -0.22 5.075 1 0 . CA ALA 109 ' ' 1 
+ATOM 110 C CA ALA 110 . . ' ' 1 -25.946 -3.032 3.23 1 0 . CA ALA 110 ' ' 1 
+ATOM 111 C CA ALA 111 . . ' ' 1 -26.801 -3.147 -0.483 1 0 . CA ALA 111 ' ' 1 
+ATOM 112 C CA ALA 112 . . ' ' 1 -27.443 -6.505 -2.19 1 0 . CA ALA 112 ' ' 1 
+ATOM 113 C CA ALA 113 . . ' ' 1 -24.743 -7.617 -4.602 1 0 . CA ALA 113 ' ' 1 
+ATOM 114 C CA ALA 114 . . ' ' 1 -27.066 -7.566 -7.6 1 0 . CA ALA 114 ' ' 1 
+ATOM 115 C CA ALA 115 . . ' ' 1 -27.919 -3.909 -7.009 1 0 . CA ALA 115 ' ' 1 
+ATOM 116 C CA ALA 116 . . ' ' 1 -24.256 -2.986 -6.672 1 0 . CA ALA 116 ' ' 1 
+ATOM 117 C CA ALA 117 . . ' ' 1 -23.514 -4.702 -9.948 1 0 . CA ALA 117 ' ' 1 
+ATOM 118 C CA ALA 118 . . ' ' 1 -26.411 -3.021 -11.722 1 0 . CA ALA 118 ' ' 1 
+ATOM 119 C CA ALA 119 . . ' ' 1 -25.218 0.371 -10.459 1 0 . CA ALA 119 ' ' 1 
+ATOM 120 C CA ALA 120 . . ' ' 1 -21.61 -0.003 -11.615 1 0 . CA ALA 120 ' ' 1 
+ATOM 121 C CA ALA 121 . . ' ' 1 -22.012 -1.715 -14.989 1 0 . CA ALA 121 ' ' 1 
+ATOM 122 C CA ALA 122 . . ' ' 1 -24.387 1.04 -16.136 1 0 . CA ALA 122 ' ' 1 
+ATOM 123 C CA ALA 123 . . ' ' 1 -21.629 3.641 -15.844 1 0 . CA ALA 123 ' ' 1 
+ATOM 124 C CA ALA 124 . . ' ' 1 -20.219 5.226 -19.005 1 0 . CA ALA 124 ' ' 1 
+ATOM 125 C CA ALA 125 . . ' ' 1 -17.24 7.553 -19.333 1 0 . CA ALA 125 ' ' 1 
+ATOM 126 C CA ALA 126 . . ' ' 1 -15.637 9.961 -21.768 1 0 . CA ALA 126 ' ' 1 
+ATOM 127 C CA ALA 127 . . ' ' 1 -12.084 9.037 -20.822 1 0 . CA ALA 127 ' ' 1 
+ATOM 128 C CA ALA 128 . . ' ' 1 -10.214 12.079 -22.275 1 0 . CA ALA 128 ' ' 1 
+ATOM 129 C CA ALA 129 . . ' ' 1 -12.171 14.375 -19.902 1 0 . CA ALA 129 ' ' 1 
+ATOM 130 C CA ALA 130 . . ' ' 1 -13.345 12.155 -17.056 1 0 . CA ALA 130 ' ' 1 
+ATOM 131 C CA ALA 131 . . ' ' 1 -16.961 13.086 -17.786 1 0 . CA ALA 131 ' ' 1 
+ATOM 132 C CA ALA 132 . . ' ' 1 -19.264 10.375 -16.447 1 0 . CA ALA 132 ' ' 1 
+ATOM 133 C CA ALA 133 . . ' ' 1 -22.723 9.147 -17.412 1 0 . CA ALA 133 ' ' 1 
+ATOM 134 C CA ALA 134 . . ' ' 1 -25.037 6.312 -16.395 1 0 . CA ALA 134 ' ' 1 
+ATOM 135 C CA ALA 135 . . ' ' 1 -27.601 4.498 -18.537 1 0 . CA ALA 135 ' ' 1 
+ATOM 136 C CA ALA 136 . . ' ' 1 -30.224 4.666 -15.791 1 0 . CA ALA 136 ' ' 1 
+ATOM 137 C CA ALA 137 . . ' ' 1 -29.377 7.662 -13.57 1 0 . CA ALA 137 ' ' 1 
+ATOM 138 C CA ALA 138 . . ' ' 1 -27.583 10.281 -15.707 1 0 . CA ALA 138 ' ' 1 
+ATOM 139 C CA ALA 139 . . ' ' 1 -27.806 9.292 -19.371 1 0 . CA ALA 139 ' ' 1 
+ATOM 140 C CA ALA 140 . . ' ' 1 -26.189 11.409 -22.1 1 0 . CA ALA 140 ' ' 1 
+ATOM 141 C CA ALA 141 . . ' ' 1 -28.09 13.488 -24.616 1 0 . CA ALA 141 ' ' 1 
+ATOM 142 C CA ALA 142 . . ' ' 1 -27.279 11.375 -27.677 1 0 . CA ALA 142 ' ' 1 
+ATOM 143 C CA ALA 143 . . ' ' 1 -27.233 7.637 -27.009 1 0 . CA ALA 143 ' ' 1 
+ATOM 144 C CA ALA 144 . . ' ' 1 -23.749 6.331 -26.219 1 0 . CA ALA 144 ' ' 1 
+ATOM 145 C CA ALA 145 . . ' ' 1 -21.985 9.604 -27.086 1 0 . CA ALA 145 ' ' 1 
+ATOM 146 C CA ALA 146 . . ' ' 1 -20.298 12.32 -25.019 1 0 . CA ALA 146 ' ' 1 
+ATOM 147 C CA ALA 147 . . ' ' 1 -22.415 15.489 -24.825 1 0 . CA ALA 147 ' ' 1 
+ATOM 148 C CA ALA 148 . . ' ' 1 -19.469 17.796 -25.434 1 0 . CA ALA 148 ' ' 1 
+ATOM 149 C CA ALA 149 . . ' ' 1 -17.334 16.126 -28.133 1 0 . CA ALA 149 ' ' 1 
+ATOM 150 C CA ALA 150 . . ' ' 1 -19.769 13.619 -29.616 1 0 . CA ALA 150 ' ' 1 
+ATOM 151 C CA ALA 151 . . ' ' 1 -17.211 10.854 -29.123 1 0 . CA ALA 151 ' ' 1 
+ATOM 152 C CA ALA 152 . . ' ' 1 -18.503 7.396 -28.259 1 0 . CA ALA 152 ' ' 1 
+ATOM 153 C CA ALA 153 . . ' ' 1 -18.477 6.647 -24.531 1 0 . CA ALA 153 ' ' 1 
+ATOM 154 C CA ALA 154 . . ' ' 1 -16.598 3.775 -22.924 1 0 . CA ALA 154 ' ' 1 
+ATOM 155 C CA ALA 155 . . ' ' 1 -16.578 1.804 -19.676 1 0 . CA ALA 155 ' ' 1 
+ATOM 156 C CA ALA 156 . . ' ' 1 -13.786 1.527 -17.135 1 0 . CA ALA 156 ' ' 1 
+ATOM 157 C CA ALA 157 . . ' ' 1 -11.885 -1.737 -16.893 1 0 . CA ALA 157 ' ' 1 
+ATOM 158 C CA ALA 158 . . ' ' 1 -12.417 -1.291 -13.143 1 0 . CA ALA 158 ' ' 1 
+ATOM 159 C CA ALA 159 . . ' ' 1 -16.171 -1.561 -13.774 1 0 . CA ALA 159 ' ' 1 
+ATOM 160 C CA ALA 160 . . ' ' 1 -16.382 -4.801 -15.782 1 0 . CA ALA 160 ' ' 1 
+ATOM 161 C CA ALA 161 . . ' ' 1 -19.032 -7.122 -14.368 1 0 . CA ALA 161 ' ' 1 
+ATOM 162 C CA ALA 162 . . ' ' 1 -16.736 -10.1 -13.81 1 0 . CA ALA 162 ' ' 1 
+ATOM 163 C CA ALA 163 . . ' ' 1 -14.341 -7.794 -11.922 1 0 . CA ALA 163 ' ' 1 
+ATOM 164 C CA ALA 164 . . ' ' 1 -17.075 -6.255 -9.762 1 0 . CA ALA 164 ' ' 1 
+ATOM 165 C CA ALA 165 . . ' ' 1 -18.519 -9.649 -8.885 1 0 . CA ALA 165 ' ' 1 
+ATOM 166 C CA ALA 166 . . ' ' 1 -15.102 -11.053 -7.985 1 0 . CA ALA 166 ' ' 1 
+ATOM 167 C CA ALA 167 . . ' ' 1 -14.474 -8.096 -5.685 1 0 . CA ALA 167 ' ' 1 
+ATOM 168 C CA ALA 168 . . ' ' 1 -17.824 -8.641 -3.945 1 0 . CA ALA 168 ' ' 1 
+ATOM 169 C CA ALA 169 . . ' ' 1 -17.233 -12.369 -3.502 1 0 . CA ALA 169 ' ' 1 
+ATOM 170 C CA ALA 170 . . ' ' 1 -13.895 -11.626 -1.857 1 0 . CA ALA 170 ' ' 1 
+ATOM 171 C CA ALA 171 . . ' ' 1 -15.413 -8.87 0.272 1 0 . CA ALA 171 ' ' 1 
+ATOM 172 C CA ALA 172 . . ' ' 1 -18.156 -11.026 1.739 1 0 . CA ALA 172 ' ' 1 
+ATOM 173 C CA ALA 173 . . ' ' 1 -15.872 -13.971 2.497 1 0 . CA ALA 173 ' ' 1 
+ATOM 174 C CA ALA 174 . . ' ' 1 -13.673 -11.606 4.544 1 0 . CA ALA 174 ' ' 1 
+ATOM 175 C CA ALA 175 . . ' ' 1 -16.413 -9.527 6.12 1 0 . CA ALA 175 ' ' 1 
+ATOM 176 C CA ALA 176 . . ' ' 1 -19.052 -12.087 7.163 1 0 . CA ALA 176 ' ' 1 
+ATOM 177 C CA ALA 177 . . ' ' 1 -17.053 -13.206 10.235 1 0 . CA ALA 177 ' ' 1 
+ATOM 178 C CA ALA 178 . . ' ' 1 -16.385 -9.552 11.099 1 0 . CA ALA 178 ' ' 1 
+ATOM 179 C CA ALA 179 . . ' ' 1 -20.102 -8.758 11.07 1 0 . CA ALA 179 ' ' 1 
+ATOM 180 C CA ALA 180 . . ' ' 1 -20.737 -11.671 13.399 1 0 . CA ALA 180 ' ' 1 
+ATOM 181 C CA ALA 181 . . ' ' 1 -17.882 -10.429 15.595 1 0 . CA ALA 181 ' ' 1 
+ATOM 182 C CA ALA 182 . . ' ' 1 -19.463 -7.015 16.073 1 0 . CA ALA 182 ' ' 1 
+ATOM 183 C CA ALA 183 . . ' ' 1 -22.97 -8.425 16.55 1 0 . CA ALA 183 ' ' 1 
+ATOM 184 C CA ALA 184 . . ' ' 1 -21.524 -10.47 19.438 1 0 . CA ALA 184 ' ' 1 
+ATOM 185 C CA ALA 185 . . ' ' 1 -19.715 -7.409 20.779 1 0 . CA ALA 185 ' ' 1 
+ATOM 186 C CA ALA 186 . . ' ' 1 -23.048 -5.604 20.824 1 0 . CA ALA 186 ' ' 1 
+ATOM 187 C CA ALA 187 . . ' ' 1 -24.72 -8.528 22.628 1 0 . CA ALA 187 ' ' 1 
+ATOM 188 C CA ALA 188 . . ' ' 1 -21.98 -8.187 25.261 1 0 . CA ALA 188 ' ' 1 
+ATOM 189 C CA ALA 189 . . ' ' 1 -22.686 -4.466 25.598 1 0 . CA ALA 189 ' ' 1 
+ATOM 190 C CA ALA 190 . . ' ' 1 -19.297 -3.342 24.328 1 0 . CA ALA 190 ' ' 1 
+ATOM 191 C CA ALA 191 . . ' ' 1 -20.619 -1.429 21.316 1 0 . CA ALA 191 ' ' 1 
+ATOM 192 C CA ALA 192 . . ' ' 1 -23.778 -1.03 19.313 1 0 . CA ALA 192 ' ' 1 
+ATOM 193 C CA ALA 193 . . ' ' 1 -24.242 -2.62 15.927 1 0 . CA ALA 193 ' ' 1 
+ATOM 194 C CA ALA 194 . . ' ' 1 -26.784 -1.833 13.231 1 0 . CA ALA 194 ' ' 1 
+ATOM 195 C CA ALA 195 . . ' ' 1 -27.365 -3.128 9.721 1 0 . CA ALA 195 ' ' 1 
+ATOM 196 C CA ALA 196 . . ' ' 1 -28.346 -0.141 7.598 1 0 . CA ALA 196 ' ' 1 
+ATOM 197 C CA ALA 197 . . ' ' 1 -30.546 -0.59 4.537 1 0 . CA ALA 197 ' ' 1 
+ATOM 198 C CA ALA 198 . . ' ' 1 -28.576 1.337 1.949 1 0 . CA ALA 198 ' ' 1 
+ATOM 199 C CA ALA 199 . . ' ' 1 -31.15 0.682 -0.793 1 0 . CA ALA 199 ' ' 1 
+ATOM 200 C CA ALA 200 . . ' ' 1 -33.495 3.455 0.395 1 0 . CA ALA 200 ' ' 1 
+ATOM 201 C CA ALA 201 . . ' ' 1 -33.29 7.087 -0.771 1 0 . CA ALA 201 ' ' 1 
+ATOM 202 C CA ALA 202 . . ' ' 1 -30.429 9.05 0.769 1 0 . CA ALA 202 ' ' 1 
+ATOM 203 C CA ALA 203 . . ' ' 1 -32.851 11.166 2.775 1 0 . CA ALA 203 ' ' 1 
+ATOM 204 C CA ALA 204 . . ' ' 1 -34.557 8.077 4.189 1 0 . CA ALA 204 ' ' 1 
+ATOM 205 C CA ALA 205 . . ' ' 1 -31.264 6.412 5.118 1 0 . CA ALA 205 ' ' 1 
+ATOM 206 C CA ALA 206 . . ' ' 1 -30.334 9.647 6.86 1 0 . CA ALA 206 ' ' 1 
+ATOM 207 C CA ALA 207 . . ' ' 1 -33.553 9.56 8.876 1 0 . CA ALA 207 ' ' 1 
+ATOM 208 C CA ALA 208 . . ' ' 1 -32.93 5.899 9.715 1 0 . CA ALA 208 ' ' 1 
+ATOM 209 C CA ALA 209 . . ' ' 1 -29.428 6.705 10.943 1 0 . CA ALA 209 ' ' 1 
+ATOM 210 C CA ALA 210 . . ' ' 1 -30.827 9.496 13.09 1 0 . CA ALA 210 ' ' 1 
+ATOM 211 C CA ALA 211 . . ' ' 1 -32.985 6.907 14.884 1 0 . CA ALA 211 ' ' 1 
+ATOM 212 C CA ALA 212 . . ' ' 1 -30.113 4.419 15.176 1 0 . CA ALA 212 ' ' 1 
+ATOM 213 C CA ALA 213 . . ' ' 1 -27.71 6.983 16.606 1 0 . CA ALA 213 ' ' 1 
+ATOM 214 C CA ALA 214 . . ' ' 1 -30.04 9.454 18.332 1 0 . CA ALA 214 ' ' 1 
+#

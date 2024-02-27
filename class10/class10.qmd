@@ -1,0 +1,157 @@
+---
+title: "Class 10: Structural Bioinformatics pt. 1"
+author: "Alexis Galano (PID: A17628362)"
+format: pdf
+editor: visual
+---
+
+# The PDB database
+
+Here we examine the size and composition of the main database of biomolecular structures - the PDB.
+
+
+Get a CSV fil from the PDB database and read it into to R.
+
+```{r}
+pdbstats <- read.csv("Data Export Summary.csv", row.names=1)
+head(pdbstats)
+```
+
+
+
+> Q1: What percentage of structures in the PDB are solved by X-Ray and Electron Microscopy.
+
+My pdbstats data frame has numbers with commas in them. This may cause us problems. Let's see:
+```{r}
+pdbstats$X.ray
+```
+```{r}
+as.numeric(pdbstats$X.ray)
+```
+```{r}
+x <- "22,200"
+as.numeric(x) + 1
+```
+
+```{r}
+as.numeric(gsub(",","",x))
+```
+I can turn this snipet into a function that I can use for every column in the table
+```{r}
+commasum <- function(x) {
+ sum(as.numeric(gsub(",","",x)))
+}
+commasum(pdbstats$X.ray)
+```
+```{r}
+totals <- apply(pdbstats, 2, commasum)
+totals
+```
+
+```{r}
+round(totals/totals["Total"]*100, 2)
+```
+- A1. 84.54% are X.ray and 8.72% are Electron Microscopy solved structures.
+
+> Q2: What proportion of structures in the PDB are protein?
+
+
+```{r}
+((215684/249751891)*100)
+```
+```{r}
+(186898+11559+12621)/215684
+```
+```{r}
+186898/215684
+```
+
+- A2. 97.86% of the structures in the PDB are protein/oligosaccharide/NA structures. 86.65% are protein-only structures.
+
+
+
+> Q3: Type HIV in the PDB website search box on the home page and determine how many HIV-1 protease structures are in the current PDB?
+
+- A3. There are 215,684 HIV-1 protease structures in the current PDB.
+
+
+# 2. Visualizing Protein Structure
+
+We will learn the basics of Mol* (mol-star) homepage: 
+https://molstar.org/viewer/
+
+
+We will play with PDB code 1HSG, an HIV-1 protease.
+
+![](1HSG.png)
+
+Show the ASP 25 amino acids:
+
+
+ASP 25 A chain
+![](ASP25A.png)
+
+ASP 25 B chain
+![](ASP25B.png)
+
+
+## Back to R and working with PDB structures
+
+Predict the dynamics (flexibility) of an important structure.
+
+(Skip to )
+
+```{r}
+library(bio3d)
+
+hiv <- read.pdb("1hsg")
+hiv
+```
+
+```{r}
+head(hiv$atom)
+```
+
+```{r}
+pdbseq(hiv)
+```
+
+Here we will do a Normal Mode Analysis (NMA) to predict functional motions of a kinase protein.
+
+```{r}
+adk <- read.pdb("6s36")
+adk
+```
+
+```{r}
+modes <- nma(adk)
+plot(modes)
+```
+
+Make a "movie" called a trajectory of the predicted motions: 
+
+```{r}
+mktrj(modes, file="adk_m7.pdb")
+```
+
+Then I can open this file in Mol
+
+![](adkm7.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
