@@ -1,0 +1,71 @@
+---
+title: "Class 12 Lab"
+author: "Alexis Galano (PID: A17628362)"
+format: pdf
+editor: visual
+---
+
+# Section 1. Proportion of G/G in a population
+
+Here we read this CSV file
+
+```{r}
+mxl <- read.csv("373531-SampleGenotypes-Homo_sapiens_Variation_Sample_rs8067378.csv")
+head(mxl)
+```
+
+```{r}
+table(mxl$Genotype..forward.strand.) / nrow(mxl) * 100
+```
+
+```{r}
+gbr <- read.csv("373522-SampleGenotypes-Homo_sapiens_Variation_Sample_rs8067378.csv")
+head(gbr)
+```
+
+```{r}
+round(table(gbr$Genotype..forward.strand.) / nrow(gbr) * 100, 2) 
+```
+This variant that is associated with childhood asthma is more frequent in the GBR population than the MKL population.
+
+Lets now dig into this further.
+
+## Section 4: Population Scale Analysis
+
+How many samples do we have?
+
+```{r}
+expr <- read.table("rs8067378_ENSG00000172057.6.txt")
+head(expr)
+```
+```{r}
+nrow(expr)
+```
+```{r}
+table(expr$geno)
+```
+```{r}
+summary(expr$exp)
+```
+
+- A13. The sample size for genotype A|A is 108, A|G is 233, and G|G is 121. The median expression level for the genotypes is 25.11.
+
+
+```{r}
+library(ggplot2)
+```
+
+Let's make a boxplot
+
+```{r}
+ggplot(expr) +
+  aes(x=geno, y=exp, fill=geno) +
+  geom_boxplot(notch = TRUE) +
+  labs(x="Genotype", y="Expression")
+```
+
+- A14. According to the boxplot, the mean expression distributions of each genotype do not overlap signifiying that each genotype's expression value is different. Particularly, having a G|G genotype in this location is associated with having a lower ORMDL3 expression, while an A|A genotype is associated with a relatively higher ORMDL3 expression. Therefore, the SNP does effect the expression of the ORMDL3 gene.
+
+
+
+
